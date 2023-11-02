@@ -52,8 +52,10 @@
     margin: 1em;
     font-size: 18px;
     font-family: monospace;
+    font-weight: bold;
     border: none;
     outline: none;
+    border-bottom: 2px solid;
     background-color: transparent;
     color:#fff;
 }
@@ -79,6 +81,11 @@
     background-color: var(--boton-eniar);
     box-shadow: 2px 2px 20px #fff;
     font-weight: bold;
+}
+.formulario input[type=submit]:hover{
+    background:linear-gradient(to left,#fff,blue);
+    color: #000;
+    transition: all .3s ease-in-out;
 }
 .formulario input[type=submit]:active{opacity: .8;}
 .formulario input::placeholder{color: #fff;}

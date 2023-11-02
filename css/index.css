@@ -79,7 +79,7 @@
     opacity: .5;
 }
 .menu-items a:hover{
-    color: #000;
+    color: red;
     font-weight: bold;
     transition: all .2s ease-in-out;
 }
