@@ -59,7 +59,7 @@
 }
 
 .seleccionar_todo{
-    background-image: url("../svg/bx-select-multiple.svg");
+    background-image: url("../img/svg/bx-select-multiple.svg");
     background-color: transparent !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -67,7 +67,7 @@
     border: none !important;
 }
 .activo{
-    background-image: url("../svg/bxs-user-x.svg");
+    background-image: url("../img/svg/bxs-user-x.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -105,13 +105,13 @@
     background-color: transparent;
 }
 .table .delete{
-    background-image: url("../svg/delete.svg");
+    background-image: url("../img/svg/delete.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .table .edit{
-    background-image: url("../svg/bx-edit.svg");
+    background-image: url("../img/svg/bx-edit.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -164,7 +164,7 @@
     border: none;
     overflow: hidden;
     background-color: transparent;
-    background-image:url("../svg/bx-x.svg") ;
+    background-image:url("../img/svg/bx-x.svg") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
