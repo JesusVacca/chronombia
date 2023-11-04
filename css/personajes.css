@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-fondo:rgb(19, 19, 85);
+    --color-texto:#fff;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background: var(--color-fondo);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor .personaje-contenedor{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.personaje-contenedor .personaje{
+    width: 80%;
+    height: 70%;
+    overflow: hidden;
+}
+.personaje img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid #000;
+}
+.personaje-contenedor .descripcion{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-texto);
+    font-size: 25px;
+}
