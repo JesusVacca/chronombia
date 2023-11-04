@@ -46,3 +46,15 @@
     color: var(--color-texto);
     font-size: 25px;
 }
+@media (max-width:900px) {
+    .contenedor{
+        flex-direction: column;
+        height: 100%;
+    }
+    .descripcion{font-size: 18px !important;}
+    .personaje-contenedor{
+        width: 80% !important;
+        height: 550px !important;
+    }
+    
+}
