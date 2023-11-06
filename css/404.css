@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-fondo:rgb(19, 19, 85);
+    --texto:#fff;
+    --titulos:#fff;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: var(--color-fondo);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+.contenedor div{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor .mensaje{
+    position: relative;
+}
+.mensaje p{
+    font-size: 25px;
+    color: var(--texto);
+    opacity: .89;
+    font-weight: bold;
+}
+.mensaje .error{
+    color: red;
+    opacity: .7;
+    white-space: nowrap;
+    width: 13ch;
+    animation: typing 4s steps(13) infinite alternate;  
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+}
+.mensaje .titulo{
+    color: var(--titulos);
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-weight: bold;
+}
+
+.img .imagen{
+    width: 90%;
+    height: 90%;
+    object-fit:contain;
+}
+@keyframes typing {
+    from{width: 0;}
+    to{width: 13ch;}
+}
+/* Sitio responsivo */
+
+@media (max-width:1000px) {
+    .contenedor{
+        flex-direction: column;
+    }
+    .titulo{
+        top: 7% !important;
+        left: 3% !important;
+    }
+    .mensaje p{
+        margin-left: 1em;
+        overflow: hidden;
+        font-size: 20px !important;
+        width: 90%;
+    }
+}
