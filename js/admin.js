@@ -1,51 +1,41 @@
-const seleccionar = document.getElementsByClassName("seleccionar");
-const seleccionar_todo = document.getElementById("todo");
-const list_edit = document.getElementsByClassName("edit");
+const btn_all = document.getElementById("all");
+const list_selection = document.getElementsByClassName("check");
+const tabla_datos = document.getElementById("table");
+const table_body = tabla_datos.children[1];
 
+// Formulario de agregar nuevo admin
+const form_admin = document.getElementById("add-items");
+// Botones de accion del formulario
 
-for (let index = 0; index < list_edit.length; index++) {
-    const element = list_edit[index];
-    element.onclick= () =>{
-        document.getElementById("formulario-editable").style.display = "flex";
-        const btn_close = document.getElementById("close");
-        btn_close.onclick = () =>{
-            document.getElementById("formulario-editable").style.display = "none";
-        };
-    };
-};
-
-seleccionar_todo.onclick = ()=>{
-    if(seleccionar_todo.classList.contains("seleccionar_todo")){
-        seleccionar_todo.classList.remove("seleccionar_todo");
-        seleccionar_todo.title="Seleccionar todo";
-        for(let i = 0; i<seleccionar.length; i++){
-            if(seleccionar[i].classList.contains("activo")){
-                seleccionar[i].classList.remove("activo");
-            }
-        }
-    }
-    else{
-        seleccionar_todo.title="Deselecionar todo";
-        seleccionar_todo.classList.add("seleccionar_todo");
-        for(let i = 0; i<seleccionar.length; i++){
-            if(!seleccionar[i].classList.contains("activo")){
-                seleccionar[i].classList.add("activo");
-            }
-        }
-    }
+const close_btn = document.getElementById("close");
+const add_btn = document.getElementById("add_btn");
+close_btn.onclick = ()=>{
+    form_admin.classList.toggle("form-activo");
 }
 
-for(let i = 0; i<seleccionar.length; i++){
-    seleccionar[i].onclick = ()=>{
-        if(seleccionar[i].classList.contains("activo")){
-            seleccionar[i].classList.replace("activo","desactivo");
-            seleccionar[i].title="Eliminar";
-        }
-        else{
-            seleccionar[i].title="Deselecionar";
-            seleccionar[i].classList.replace("desactivo","activo");
-        }
-    }
+add_btn.onclick = ()=>{
+    form_admin.classList.toggle("form-activo");
 }
 
 
+
+btn_all.onclick = ()=>{
+    for (let index = 0; index < list_selection.length; index++) {
+        const element = list_selection[index];
+        element.checked = !element.checked;        
+        seleccionar(index,"activo");
+    }
+}
+
+for (let index = 0; index < list_selection.length; index++) {
+    const element = list_selection[index];
+    element.addEventListener('change',()=>{
+        seleccionar(index,"activo");
+    })
+    
+}
+
+function seleccionar(index,className){
+    const row = table_body.children[index];
+    row.classList.toggle(className);
+}

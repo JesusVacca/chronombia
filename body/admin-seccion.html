@@ -4,194 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin-estilos.css">
-    <title>Sección administrativa.</title>
-    
+    <title>Admin</title>
 </head>
 <body>
     <div class="contenedor">
-        <h1 class="titulo-principal">SECCIÓN ADMINISTRATIVA</h1>
-        <div class="contenedor-tabla">
-            <div class="tabla-1 items-hijo">
-                <h2>Datos administradores</h2>
-                <table class="table">
+        <div class="listado-admin">
+            <h1>Listado de administradores</h1>
+            <div class="botones">
+                <button type="button" id="add_btn">
+                    <img src="../img/svg/plus-lg.svg" alt="">
+                </button>
+                <button type="button">
+                    <img src="../img/svg/delete.svg" alt="" title="Eliminar selección">
+                </button>
+                <button type="button">
+                    <img src="../img/svg/bx-search-alt.svg" alt="">
+                </button>
+                
+            </div>
+            <div class="contenedor-table">
+                <table class="table" id="table">
                     <thead>
                         <tr>
                             <td>
-                                <input type="checkbox" name="" id="todo" class="todo">
+                                <button type="button" id="all">
+                                    <img src="../img/svg/bx-select-multiple.svg" alt="">
+                                </button>
                             </td>
-                            <td>ID</td>
+                            <td>Id</td>
                             <td>Nombre</td>
                             <td>Apellidos</td>
                             <td>Cedula</td>
                             <td>Correo</td>
-                            <td>Editar</td>
-                            <td>Eliminar</td>
+                            <td>Telefono</td>
+                            <td>Delete</td>
+                            <td>Edit</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <input type="checkbox" name="" id="" class="seleccionar desactivo" title="Eliminar">
+                                <input type="checkbox" name="" id="" class="check">
                             </td>
-                            <td>1</td>
-                            <td>Jesus</td>
-                            <td>Vacca</td>
-                            <td>1007899440</td>
-                            <td>jesus.vacca99@gmail.com</td>
+                            <td>dada</td>
+                            <td>dada</td>
+                            <td>dada</td>
+                            <td>dada</td>
+                            <td>dada</td>
+                            <td>dada</td>
                             <td>
-                                <input type="button" value="" class="boton-items edit" id="">
-                            </td>
-                            <td>
-                                <input type="button" value="" class="boton-items delete">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="" class="seleccionar desactivo" title="Eliminar">
-                            </td>
-                            <td>1</td>
-                            <td>Jesus</td>
-                            <td>Vacca</td>
-                            <td>1007899440</td>
-                            <td>jesus.vacca99@gmail.com</td>
-                            <td>
-                                <input type="button" value="" class="boton-items edit" id="">
+                                <button type="button" class="check" title="Eliminar">
+                                    <img src="../img/svg/delete.svg" alt="">
+                                </button>
                             </td>
                             <td>
-                                <input type="button" value="" class="boton-items delete">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="" class="seleccionar desactivo" title="Eliminar">
-                            </td>
-                            <td>1</td>
-                            <td>Jesus</td>
-                            <td>Vacca</td>
-                            <td>1007899440</td>
-                            <td>jesus.vacca99@gmail.com</td>
-                            <td>
-                                <input type="button" value="" class="boton-items edit" id="">
-                            </td>
-                            <td>
-                                <input type="button" value="" class="boton-items delete">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="" class="seleccionar desactivo" title="Eliminar">
-                            </td>
-                            <td>1</td>
-                            <td>Jesus</td>
-                            <td>Vacca</td>
-                            <td>1007899440</td>
-                            <td>jesus.vacca99@gmail.com</td>
-                            <td>
-                                <input type="button" value="" class="boton-items edit" id="">
-                            </td>
-                            <td>
-                                <input type="button" value="" class="boton-items delete">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="" class="seleccionar desactivo" title="Eliminar">
-                            </td>
-                            <td>1</td>
-                            <td>Jesus</td>
-                            <td>Vacca</td>
-                            <td>1007899440</td>
-                            <td>jesus.vacca99@gmail.com</td>
-                            <td>
-                                <input type="button" value="" class="boton-items edit" id="">
-                            </td>
-                            <td>
-                                <input type="button" value="" class="boton-items delete">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="" class="seleccionar desactivo" title="Eliminar">
-                            </td>
-                            <td>1</td>
-                            <td>Jesus</td>
-                            <td>Vacca</td>
-                            <td>1007899440</td>
-                            <td>jesus.vacca99@gmail.com</td>
-                            <td>
-                                <input type="button" value="" class="boton-items edit" id="">
-                            </td>
-                            <td>
-                                <input type="button" value="" class="boton-items delete">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="" class="seleccionar desactivo" title="Eliminar">
-                            </td>
-                            <td>1</td>
-                            <td>Jesus</td>
-                            <td>Vacca</td>
-                            <td>1007899440</td>
-                            <td>jesus.vacca99@gmail.com</td>
-                            <td>
-                                <input type="button" value="" class="boton-items edit" id="">
-                            </td>
-                            <td>
-                                <input type="button" value="" class="boton-items delete">
+                                <button type="button" class="check">
+                                    <img src="../img/svg/bx-edit.svg" alt="">
+                                </button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="formulario-editable" id="formulario-editable">
-                    <form action="">
-                        <input type="button" value=" " class="close" id="close">
-                        <label for="">
-                            ID:
-                        </label>
-                        <input type="text" name="" id="" readonly>
-                        <label for="">
-                            NOMBRE:
-                        </label>
-                        <input type="text" name="" id="" readonly>
-                        <label for="">
-                            APELIDOS:
-                        </label>
-                        <input type="text" name="" id="" readonly>
-                        <label for="">
-                            CEDULA:
-                        </label>
-                        <input type="text" name="" id="" readonly>
-                        <label for="">
-                            CORREO:
-                        </label>
-                        <input type="text" name="" id="" readonly>
-                        <input type="submit" value="Actualizar">
-                    </form>
-                </div>
             </div>
-            <div class="tabla-2 items-hijo">
-                <h2>Credenciales</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <td>Nombre de usuario</td>
-                            <td>Contraseña</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>jesus.vacca99@gmail.com</td>
-                            <td>1007899440</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            
-
+        </div>
+        <div class="credenciales">
+            <h1>Credenciales</h1>
+        </div>
+        <div class="add-items" id="add-items">
+            <h1>Agregar un administrador</h1>
+            <button type="button" class="close" id="close">
+                <img src="../img/svg/bx-x.svg" alt="">
+            </button>
+            <form action="" class="formulario">
+                <input type="number" name="cedula" id="" placeholder="Cedula">
+                <input type="text" name="nombres" id="" placeholder="Nombres">
+                <input type="text" name="apellidos" id="" placeholder="Apellidos">
+                <input type="number" name="telefono" id="" placeholder="Telefono">
+                <input type="email" name="correo" id="" placeholder="Correo">
+                <input type="submit" value="Agregar">
+            </form>
         </div>
     </div>
-    <script src="../js/admin.js"></script>
 </body>
+<script src="../js/admin.js"></script>
 </html>
