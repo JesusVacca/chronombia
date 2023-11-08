@@ -23,19 +23,20 @@ btn_all.onclick = ()=>{
     for (let index = 0; index < list_selection.length; index++) {
         const element = list_selection[index];
         element.checked = !element.checked;        
-        seleccionar(index,"activo");
+        console.log(index)
+        seleccionarUno(index,"activo");
     }
 }
 
 for (let index = 0; index < list_selection.length; index++) {
     const element = list_selection[index];
     element.addEventListener('change',()=>{
-        seleccionar(index,"activo");
+        seleccionarUno(index,"activo");
     })
     
 }
 
-function seleccionar(index,className){
-    const row = table_body.children[index];
+function seleccionarUno(index,className){
+    let row = table_body.children[index];
     row.classList.toggle(className);
 }
