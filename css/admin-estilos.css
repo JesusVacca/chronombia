@@ -13,6 +13,7 @@
 }
 .contenedor{
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     font-family: monospace;
@@ -22,20 +23,15 @@
     position: relative;
 }
 .contenedor .listado-admin, .credenciales{
+    width: 90%;
     overflow: hidden;
-    height: 500px;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 2px solid;
-    border-color: #fff;
+    border: 2px solid;
 }
-.contenedor .listado-admin{
-    width: 70%;
-}
-.contenedor .credenciales{
-    width: 30%;
-}
+
 .contenedor h1{
     text-align: center;
     width: 90%;
@@ -73,14 +69,14 @@
     height: 100%;
     overflow: auto;
 }
-.contenedor-table .table{
+.table{
     margin-top: 1%;
-    width: 100%;
+    width: 90%;
     height: auto;
     font-size: 16px;
     text-align: center;
 }
-.contenedor-table .table #all{
+.table #all{
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -89,7 +85,7 @@
 }
 .table #all:active{opacity: .78;}
 
-.contenedor-table .table .check{
+.table .check{
     width: 30px;
     height: 30px;
     border: none;
@@ -101,14 +97,14 @@
     width: 90%;
     height: 90%;
 }
-.contenedor-table .table,tr,td{
+.table,tr,td{
     padding: 3px;
     border: 2px solid;
     border-collapse: collapse;
     border-color: #000;
     color: var(--texto);
 }
-.contenedor-table .table thead{
+.table thead{
     position: sticky;
     top: 0;
     background: #2c2a2a;
