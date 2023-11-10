@@ -4,111 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin-estilos.css">
-    <title>Admin</title>
+    <title>Admin site</title>
 </head>
 <body>
-    <div class="contenedor">
-        <div class="listado-admin">
-            <h1>Listado de administradores</h1>
-            <div class="botones">
-                <button type="button" id="add_btn">
-                    <img src="../img/svg/plus-lg.svg" alt="">
-                </button>
-                <button type="button">
-                    <img src="../img/svg/delete.svg" alt="" title="Eliminar selección">
-                </button>
-                <button type="button">
-                    <img src="../img/svg/bx-search-alt.svg" alt="">
-                </button>
-                
+    <div class="main">
+        <header class="header">
+            <div class="sesion-activo">
+                <div class="username">
+                    <span></span>
+                    <p>
+                        <strong>Jesus Rodolfo Vacca</strong>
+                    </p>
+                </div>
+                <div class="cerrar-sesion">
+                    <select>
+                        <option value="Ver-perfin">Ver perfil</option>
+                        <option value="cerrar-sesion">Cerrar sesión</option>
+                    </select>
+                </div>
             </div>
-            <div class="contenedor-table">
-                <table class="table" id="table">
+            <div class="hamburguesa" style="display: none;">
+                <span></span><span></span><span></span>
+            </div>
+        </header>
+        <div class="contenedor-tablas">
+            <div class="tabla-1">
+                <div class="botones">
+                    <button type="button">
+                        <img src="../img/svg/plus-lg.svg" alt="">
+                    </button>
+                    <button type="button">
+                        <img src="../img/svg/delete.svg" alt="">
+                    </button>
+                    <button type="button">
+                        <img src="../img/svg/bx-search-alt.svg" alt="">
+                    </button>
+                </div>
+                <h1>Admin list</h1>
+                <table>
                     <thead>
                         <tr>
-                            <td>
-                                <button type="button" id="all">
-                                    <img src="../img/svg/bx-select-multiple.svg" alt="">
-                                </button>
-                            </td>
                             <td>Id</td>
-                            <td>Nombre</td>
+                            <td>Nombres</td>
                             <td>Apellidos</td>
-                            <td>Cedula</td>
-                            <td>Correo</td>
                             <td>Telefono</td>
-                            <td>Delete</td>
-                            <td>Edit</td>
+                            <td>Correo</td>
+                            <td>Editar</td>
+                            <td>Borrar</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Algodsdsds</td>
+                            <td>Algo</td>
+                            <td>Algo</td>
+                            <td>Algo</td>
+                            <td>Algo</td>
                             <td>
-                                <input type="checkbox" name="" id="" class="check">
-                            </td>
-                            <td>dada</td>
-                            <td>dada</td>
-                            <td>dada</td>
-                            <td>dada</td>
-                            <td>dada</td>
-                            <td>dada</td>
-                            <td>
-                                <button type="button" class="button" title="Eliminar">
-                                    <img src="../img/svg/delete.svg" alt="">
+                                <button type="button">
+                                    <img src="../img/svg/bxs-edit-alt.svg" alt="">
                                 </button>
                             </td>
                             <td>
-                                <button type="button" class="button">
-                                    <img src="../img/svg/bx-edit.svg" alt="">
+                                <button type="button">
+                                    <img src="../img/svg/person-x-fill.svg" alt="">
                                 </button>
                             </td>
+                           
                         </tr>
                         
                     </tbody>
                 </table>
             </div>
-        </div>
-        <div class="credenciales">
-            <h1>Credenciales</h1>
-            <div class="contenedor-table">
-                <table class="table" id="table-credenciales">
+            <div class="tabla-2">
+                <h1>Credenciales</h1>
+                <table>
                     <thead>
                         <tr>
-                            <td>Id</td>
-                            <td>Nombre de usuario</td>
-                            <td>Contraseña</td>
-                            <td>Cedula</td>
-                            <td>ROL</td>
-                            
+                            <td>ID</td>
+                            <td>Username</td>
+                            <td>Password</td>
+                            <td>Editar</td>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>dada</td>
-                            <td>dada</td>
-                            <td>dada</td>
-                            <td>dada</td>
-                            <td>dada</td>
-                        </tr>
-                    </tbody>
                 </table>
             </div>
         </div>
-        <div class="add-items" id="add-items">
-            <h1>Agregar un administrador</h1>
-            <button type="button" class="close" id="close">
-                <img src="../img/svg/bx-x.svg" alt="">
-            </button>
-            <form action="" class="formulario">
-                <input type="number" name="cedula" id="" placeholder="Cedula">
-                <input type="text" name="nombres" id="" placeholder="Nombres">
-                <input type="text" name="apellidos" id="" placeholder="Apellidos">
-                <input type="number" name="telefono" id="" placeholder="Telefono">
-                <input type="email" name="correo" id="" placeholder="Correo">
-                <input type="submit" value="Agregar">
-            </form>
-        </div>
     </div>
 </body>
-<script src="../js/admin.js"></script>
 </html>
