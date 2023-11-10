@@ -28,6 +28,7 @@
     text-shadow: 2px 2px 5px #fff;
     overflow: auto;
     font-size: 35px;
+    text-align: end;
 }
 .main .header{
     width: 100%;
@@ -98,35 +99,48 @@
     justify-content: center;
     align-items: center;
     padding: 2em;
-    border: 2px solid;
     overflow: hidden;
 }
 /* Estilos de las tablas */
 
-.contenedor-tablas table,tr,td{
-    border-bottom: 2px solid;
-    border-collapse: collapse;
-    font-weight: bold;
-    padding: 1em;
-    margin: 1em;
-    color: var(--texto);
-    font-size: 18px;
-    text-transform: capitalize;
-    text-shadow: 2px 2px 5px #000;
-    text-align: center;
+
+.contenedor-tablas .table{
+    margin-top: 1em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+
 }
-.contenedor-tablas table thead{
-    background-color: var(--header-table);
+.table .header-row,.row{
+    width: 100%;
+    display: flex;
+}
+.header-row .cell{
+    background: var(--header-table);
+    color: var(--texto);
+}
+.table .cell{
+    padding: 1em;
+    border: 1px solid;
+    min-width:150px;
+    max-width: 100%;
+    color: #fff;
+    font-size: 16px;
 }
 
-.contenedor-tablas table button{
+
+
+.contenedor-tablas .table button{
     width: 40px;
     height: 30px;
     border: none;    
     background: transparent;
     cursor: pointer;
 }
-.contenedor-tablas table button img{
+.contenedor-tablas .table button img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -171,9 +185,9 @@
     }
     .contenedor-tablas .tabla-1,.tabla-2{
         overflow: auto;
-        height: 100vh;
     }
-    .contenedor-tablas table,tr,td{
-        font-size: 10px !important;
+    .contenedor-tablas .table{
+        width: 100% !important;
     }
 }
+
